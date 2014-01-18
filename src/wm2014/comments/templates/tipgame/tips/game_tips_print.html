@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Druckversion {{ game.country1 }} - {{ game.country2 }}</title>
+  <meta name="keywords" content="Privates EM Tippspiel" />
+  <meta name="description" content="Privates EM Tippspiel" />
+  <style type="text/css" media="all">
+    @import "/site_media/style/style.css";
+  </style>
+</head>
+
+<body class="print">
+    <h1>EM-Tipp-Spiel</h1>
+    <h2>{{ game.country1 }} - {{ game.country2 }}
+        {% if game.has_result %}
+          ({{ game.result1 }}:{{ game.result2 }})
+        {% else %}
+          (noch kein Ergebnis)
+        {% endif %}
+
+        <p><h4>Sieg {{ game.country1}}</h4></p>
+        <table class="print">
+          {% if tips_kats.win_1 %}
+            {% for tip in tips_kats.win_1 %}
+              <tr>
+                <td>{{ tip.0 }}</td>
+                <td>{{ tip.1 }}:{{ tip.2 }}</td>
+              </tr>
+            {% endfor %}
+          {% else %}
+            <tr><td>-/-</td></tr>
+          {% endif %}
+        </table>
+        <br />
+
+        <p><h4>Sieg {{ game.country2}}</h4></p>
+        <table class="print">
+          {% if tips_kats.win_2 %}
+            {% for tip in tips_kats.win_2 %}
+              <tr>
+                <td>{{ tip.0 }}</td>
+                <td>{{ tip.1 }}:{{ tip.2 }}</td>
+              </tr>
+            {% endfor %}
+          {% else %}
+            <tr><td>-/-</td></tr>
+          {% endif %}
+        </table>
+        <br />
+
+        <p><h4>Unentschieden</h4></p>
+        <table class="print">
+          {% if tips_kats.tie %}
+            {% for tip in tips_kats.tie %}
+              <tr>
+                <td>{{ tip.0 }}</td>
+                <td>{{ tip.1 }}:{{ tip.2 }}</td>
+              </tr>
+            {% endfor %}
+          {% else %}
+            <tr><td>-/-</td></tr>
+          {% endif %}
+        </table>
+        <br />
+
+        {% if tips_kats.no_tip %}
+        <p><h4>Kein Tipp</h4></p>
+        <table class="print">
+          {% for name in tips_kats.no_tip %}
+              <tr>
+                <td>{{ name }}</td>
+              </tr>
+          {% endfor %}
+        </table>
+        {% endif %}
+
+</body>
+</html>

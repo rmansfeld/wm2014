@@ -1,0 +1,12 @@
+{% block user %}
+  <div id="user" class="box">
+      <h4>Login</h4>
+      <br />
+      Angemeldet als <br /><br />
+      <h5>{{ user }}</h5>
+      <br />
+      <a href="/accounts/logout/?next=/" title="Unter anderem Namen anmelden">
+          Abmelden
+      </a>
+  </div>
+{% endblock user %}

@@ -1,0 +1,43 @@
+﻿{% extends 'tipgame/home/base_home.html' %}
+
+{% block content %}
+  <h2>Wertung</h2>
+	<p>Die Punkte pro getipptem Spiel werden nach folgendem Schlüssel verteilt:
+	</p>
+
+	<table class="evaluation">
+	  <tr>
+	    <th>Runde</th>
+		<th>richtiges<br />Ergebnis</th>
+	    <th>richtige<br />Tordifferenz</th>
+		<th>richtige<br />Tendenz</th>
+	    <th>Anzahl<br />Spiele</th>
+		<th>maximale<br />Punktezahl</th>
+	  </tr>
+      {% for round in rounds %}
+	  <tr>
+        <td>{{ round }}</td>
+		<td>{{ round.points_for_correct_result }} Pkte.</td>
+		<td>{{ round.points_for_correct_goal_difference }} Pkte.</td>
+		<td>{{ round.points_for_correct_tendency }} Pkt{{ round.points_for_correct_tendency|pluralize:"e" }}.</td>
+		<td>{{ round.number_of_games }}</td>
+		<td>{{ round.maximum_points }} Pkte.</td>
+	  </tr>
+      {% endfor %}
+
+	  <tr>
+	    <td colspan="5"><strong>Maximal erreichbare Punktzahl</strong></td>
+		<td><strong>{{ rounds.0.maximum_total_points }} Pkte.</strong></td>
+	  </tr>
+	</table>
+
+    <br />
+	<p>'Richtiges Ergebnis' und 'richtige Tordifferenz' beziehen sich auf das
+       offizielle Endergebnis, einschließlich evtl. Verlängerung und
+       Elfmeter-Schiessen.</p>
+	<p>'Richtige Tendenz' bedeutet richtig getippter Ausgang des Spiels (Sieg,
+       Niederlage oder Unentschieden).</p>
+
+  <br />
+
+{% endblock content %}

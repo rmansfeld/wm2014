@@ -1,0 +1,19 @@
+﻿{% extends 'tipgame/tips/base_tips.html' %}
+
+{% block content %}
+  <h2>Vorrunde</h2>
+  <p>
+    Die Vorrunde wird in acht Gruppen mit jeweils vier Mannschaften
+    ausgespielt. Nach sechs Spielen (jeder gegen jeden) gelangen die beiden
+    besten jeder Gruppe in die <a href="/Hauptrunde">Hauptrunde</a>, die
+    anderen beiden scheiden aus.
+  </p>
+
+  <dl>
+  {% for group, members in groups %}
+    <dt><a href="/Gruppe{{ group }}">Gruppe {{ group }}</a>:</dt>
+    <dd>{{ members|join:", " }}</dd>
+    <br />
+  {% endfor %}
+  </dl>
+{% endblock content %}

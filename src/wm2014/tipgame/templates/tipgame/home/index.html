@@ -1,0 +1,19 @@
+{% extends 'tipgame/home/base_home.html' %}
+
+{% block content %}
+  <h2>Hallo {{ user.first_name }},</h2>
+  <p>herzlich Willkommen bei unserem kleinen EM-Spiel.</p>
+  <p>Falls Du das erste Mal mitmachst, solltetst Du kurz die Seiten
+     <a href="/Regeln">Regeln</a> und <a href="/Wertung">Wertung</a> lesen.</p>
+  <p>Im Vergleich zum letzten Mal (Weltmeisterschaft 2010) hat sich nicht viel geändert:<br />
+     Unter <a href="/Vorrunde">Tipps</a> kannst Du nach wie vor Deine Tipps abgeben,
+     unter <a href="/Spielstand">Spielstand</a> erfährst Du, wer wieviele Punkte erhalten hat und
+     unter <a href="/Kommentare">Kommentare</a> kann sich jeder zu den Spielen
+        und Tipps äußern und die Meinungen der anderen lesen. </p>
+
+  <p>Danke für's Mitspielen!</p>
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Ute</strong> und <strong>Rainer</strong></p>
+  <br />
+
+{% endblock content %}

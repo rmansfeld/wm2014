@@ -1,0 +1,23 @@
+        <ul id="games-menu" class="menu">
+            <li class="menu-item">
+              <a href="/Vorrunde">Vorrunde</a>
+              <ul class="submenu">
+              {% for c in "ABCDEFGH"%}
+                <li class="submenu-item"><a href="/Gruppe{{ c }}">Gruppe {{ c }}</a></li>
+              {% endfor %}
+                <li class="submenu-item"><a href="/Alle">Alle (chrono.)</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="/Hauptrunde">Hauptrunde</a>
+              <ul class="submenu">
+                <li class="submenu-item"><a href="/Achtelfinale">Achtelfinale</a></li>
+                <li class="submenu-item"><a href="/Viertelfinale">Viertelfinale</a></li>
+                <li class="submenu-item"><a href="/Halbfinale">Halbfinale</a></li>
+                <li class="submenu-item"><a href="/SpielPlatz3">Spiel um Platz 3</a></li>
+                <li class="submenu-item"><a href="/Finale">Finale</a></li>
+              </ul>
+            </li>
+        </ul>
+
+

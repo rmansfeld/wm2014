@@ -1,0 +1,68 @@
+﻿{% extends 'tipgame/tips/base_tips.html' %}
+
+{% block content %}
+    <h2>Ergebnis für das Spiel</h2>
+    <h2>{{ game.country1 }} - {{ game.country2 }}
+        ({{ game.result1 }}:{{ game.result2 }})</h2>        
+
+    <p><h4>Richtiges Ergebnis ({{ points.result }} Punkte)</h4></p>
+    {% if tips_kats.result %}
+        {% for tip in tips_kats.result %}
+          {{ tip.0 }}{% if not forloop.last %}, {% endif %} 
+        {% endfor %}
+    {% else %}
+      -/-
+    {% endif %}
+    <br />    
+
+    <p><h4>Richtige Tordifferenz ({{ points.goal_difference }} Punkte)</h4></p>
+    {% if tips_kats.goal_difference %}
+      {% for tip in tips_kats.goal_difference %}
+        {{ tip.0 }} ({{ tip.1 }}:{{ tip.2 }}){% if not forloop.last %}, {% endif %} 
+      {% endfor %}
+    {% else %}
+      -/-
+    {% endif %}
+    <br />    
+
+    {% if game_is_not_tie %}
+      <p><h4>Richtige Tendenz ({{ points.tendency }} Punkt{{ points.tendency|pluralize:"e"  }})</h4></p>
+      {% if tips_kats.tendency %}
+        {% for tip in tips_kats.tendency %}
+          {{ tip.0 }} ({{ tip.1 }}:{{ tip.2 }})
+          {% if not forloop.last %}, {% endif %} 
+        {% endfor %}
+      {% else %}
+        -/-
+      {% endif %}
+      <br />    
+    {% endif %}
+
+    <p><h4>Keine Punkte</h4></p>
+    {% if tips_kats.none %}
+      {% for tip in tips_kats.none %}
+        {{ tip.0 }} ({{ tip.1 }}:{{ tip.2 }}){% if not forloop.last %}, {% endif %} 
+      {% endfor %}
+    {% else %}
+      -/-
+    {% endif %}
+            
+    {% if tips_kats.no_tip %}
+    <p><h4>Kein Tipp</h4></p>
+      {% for name in tips_kats.no_tip %}
+        {{ name }}{% if not forloop.last %}, {% endif %} 
+      {% endfor %}
+    {% endif %}
+            
+    <br /><br /><br />
+    <p>
+      <h5>       
+        Von dieser Seite gibt es auch eine
+        <a href="/Spiel/{{ game.id }}/Druck" 
+           onclick="window.open(this.href); return false;"
+           title="Druckversion öffnen">
+           Druckversion</a>, die sich über Datei -&gt; Drucken ausdrucken               
+           lässt.
+      </h5> 
+    </p>
+{% endblock content %}

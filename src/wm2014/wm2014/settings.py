@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ')^vm8rf30t+e)f9hb7k+v-v0m&!@(m25i0-!5o$0)*q1ey7tnm'
+SECRET_KEY = '!p5o43z-6o743ss=_os!kl6mq29r21ykvdo1)!ysz+r(6op_*5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -36,6 +36,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tipgame',
+    # 'comments',
+    # 'south',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,17 +60,22 @@ WSGI_APPLICATION = 'wm2014.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'NAME': 'wm2014',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'USER': 'rainer',
+        # 'PASSWORD': 'dk2xpg'
+        'USER': 'wm2014tg',
+        'PASSWORD': 'dk2xwmtg',
+        'HOST': ''
+    },
 }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'de-de'
 
-TIME_ZONE = 'Europe/Berlinxxx'
+TIME_ZONE = 'Europe/Berlin'
 
 USE_I18N = True
 
@@ -80,3 +88,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = r'F:\Python2.7\openshift\wm-tipp\wm2014\wsgi\static'
+
+# STATICFILES_DIRS = (
+#     "F:\Python2.7\openshift\wm-tipp\wm2014\wsgi\static",
+# )
+
+# su rainer/dk2xwm

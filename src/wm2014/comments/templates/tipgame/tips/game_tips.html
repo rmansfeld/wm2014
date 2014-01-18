@@ -1,0 +1,66 @@
+﻿{% extends 'tipgame/tips/base_tips.html' %}
+
+{% block content %}
+    <h2>Tipps für das Spiel</h2>
+    <h2>{{ game.country1 }} - {{ game.country2 }}
+        {% if game.has_result %}
+          ({{ game.result1 }}:{{ game.result2 }})
+        {% else %}
+          (noch kein Ergebnis)
+        {% endif %}</h2>
+    {% if game.has_begun %}
+        <p><h4>Sieg {{ game.country1}}</h4></p>
+        {% if tips_kats.win_1 %}
+            {% for tip in tips_kats.win_1 %}
+              {{ tip.0 }}&nbsp;({{ tip.1 }}:{{ tip.2 }}){% if not forloop.last %}, {% endif %} 
+            {% endfor %}
+        {% else %}
+          -/-
+        {% endif %}
+        <br />        
+
+        <p><h4>Sieg {{ game.country2}}</h4></p>
+        {% if tips_kats.win_2 %}
+          {% for tip in tips_kats.win_2 %}
+            {{ tip.0 }} ({{ tip.1 }}:{{ tip.2 }}){% if not forloop.last %}, {% endif %} 
+          {% endfor %}
+        {% else %}
+          -/-
+        {% endif %}
+        <br />        
+
+        <p><h4>Unentschieden</h4></p>
+        {% if tips_kats.tie %}
+          {% for tip in tips_kats.tie %}
+            {{ tip.0 }} ({{ tip.1 }}:{{ tip.2 }}){% if not forloop.last %}, {% endif %} 
+          {% endfor %}
+        {% else %}
+          -/-
+        {% endif %}
+        <br />        
+               
+        {% if tips_kats.no_tip %}
+        <p><h4>Kein Tipp</h4></p>
+          {% for name in tips_kats.no_tip %}
+            {{ name }}{% if not forloop.last %}, {% endif %} 
+          {% endfor %}
+        {% endif %}
+        <br /><br /><br />        
+
+        <p>
+          <h5>       
+            Von dieser Seite gibt es auch eine
+            <a href="/Spiel/{{ game.id }}/Druck" 
+               onclick="window.open(this.href); return false;"
+               title="Druckversion öffnen">
+               Druckversion</a>, die sich über Datei -&gt; Drucken ausdrucken               
+               lässt.
+          </h5> 
+        </p>
+    {% else %}
+      <p><h4>Dieses Spiel hat noch nicht
+         angfangen</h4></p>
+      <p><h4>Bis eine Vierteltunde vor Spielbeginn dürfen noch Tipps
+         eingegeben oder geändert werden.</h4></p>
+    {% endif %}
+{% endblock content %}

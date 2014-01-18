@@ -1,0 +1,68 @@
+Tests
+    Selenium
+        Log-in, Log-out  ++++++
+        Menüs            ++++++
+        Home
+        Tipps
+        Punktestand
+        Kommentare
+    Unittest
+        URL-Auflösung    ++++++
+            ohne Parameter  ++++++
+            mit Parametern  ++++++
+        views
+        Hilfsfunktionen
+
+-----------------------------------------------------------
+
+Spiel um Platz 3  ++++++
+
+views.ranking
+    Punkte-Berechnung
+    Menü verschlanken  ++++++
+
+if form.is_valid() ... else: ???
+    (führt zu AssertionError bei Eingabe von Buchstaben in Tipps!)
+
+CSRF in allen POST-Forms
+
+Tips im Admin handhabbar machen
+
+Hans-Georg (Bindestrich ???)  ++++++
+
+PendingDeprecationWarning bei tests
+
+------------------------------------------------------------
+
+Deployment
+
+------------------------------------------------------------
+
+Templates anders strukturieren (Menüs extra)
+
+Round.short_name Überflüssig? zumindest bei games-Aufruf in urls.py ersetzbar durch 'name'
+
+Kommentare
+    Gruppe (Heute, gestern usw. im Titel)
+
+Fehlende Tipps (views.fail ?)
+
+request.user automatisch in allen views (context_processor ? Class-based ?)
+
+Bootstrap
+
+HTML-Printversionen von base.html ableiten
+
+Link 'Tipps' automatisch Vorrunde, Achtelfinale, usw.
+
+Messages?
+Message-Boxes im Admin
+
+Vorrunde: erstes Spiel / zweites Spiel /drittes Spiel
+nächste Aktion
+
+E-Mail Benachrichtigungen?
+
+Länderflaggen
+
+Besserer Filter für admin (django.contrib.admin.SimpleListFilter)

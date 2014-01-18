@@ -1,0 +1,18 @@
+{% extends 'tipgame/ranking/base_ranking.html' %}
+
+{% block content %}
+    <h2>Spielstand</h2>
+    <p><h3>{{ sub_header }}</h3></p>
+    <p><h4>nach {{ games_played }} von 64 Spielen</h4></p>
+    <br />
+    <table class="games">
+    {% for player, points in player_points %}
+      <tr>
+        <td>{% ifchanged points %}{{ forloop.counter }}.{% endifchanged %}</td>
+        <td>{{ player }}</td>
+        <td>{{ points }}</td>
+      </tr>
+    {% endfor %}
+    </table>
+
+{% endblock content %}

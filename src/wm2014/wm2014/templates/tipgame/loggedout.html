@@ -1,0 +1,38 @@
+﻿{% extends 'tipgame/base.html' %}
+
+{% block sub_menu_header %}
+Nicht angemeldet!
+{% endblock sub_menu_header %}
+
+{% block sub_menu %}
+  <p> </p>
+{% endblock sub_menu %}
+
+{% block login %}
+  <div id="user" class="box">
+    <h4>Login</h4>
+    {% if form.has_errors %}
+        <p>Benutzername und Passwort passen nicht zusammen.
+           Versuchen Sie es noch einmal.</p>
+    {% endif %}
+    <form class="box-content"  id="login"
+          method="post" action=".">
+        <label for="id_username">Benutzername:</label>
+        <br />
+        {{ form.username }}
+        <br />
+        <label for="id_password">Passwort:</label>
+        {{ form.password }}
+        <br /><br />
+        <input type="submit" value="Anmelden" />
+        <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+  </div>
+{% endblock login %}
+
+{% block content %}
+  <h2>Auf Wiedersehen!</h2>
+  <p>Du hast Dich erfogreich abgemeldet.</p>
+  <p>Wenn Du willst, kannst Du Dich in der Box rechts neu anmelden.
+     &nbsp; &nbsp;--></p>
+{% endblock content %}

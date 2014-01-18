@@ -1,0 +1,27 @@
+﻿{% extends 'tipgame/base.html' %}
+
+{% block sub_menu_header %}
+fail
+{% endblock sub_menu_header %}
+
+{% block sub_menu %}
+    <br />
+{% endblock sub_menu %}
+
+{% block content %}
+  <h2>Faules Volk</h2><br />
+  <h3>Nächstes Spiel</h3>
+  <P>{{ game.date_time}} {{ game}}</p><br />
+  <h3>Noch nicht getippt haben:</h3><br />
+  <ul>
+  {% for player in lazy_players %}
+    <li>{{ player }}</li>
+  {% endfor %}
+  </ul><br />
+  <h3>Getippt haben:</h3><br />
+  <ul>
+  {% for player in good_players %}
+    <li>{{ player }}</li>
+  {% endfor %}
+  </ul>
+{% endblock content %}

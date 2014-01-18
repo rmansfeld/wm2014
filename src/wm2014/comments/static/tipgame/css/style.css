@@ -1,0 +1,370 @@
+/*************/
+/* General  */
+/*************/
+*
+{
+  margin:0;
+  padding:0;
+}
+
+html
+{
+  height: 100%;
+  font-family: serif, Helvetica, Arial;
+}
+
+body
+{
+  height: 100%;
+  position: relative;
+  padding: 20px;
+  font-family: Verdana, Geneva, "Bitstream Vera Sans", Helvetica, Arial, sans-serif;
+  font-size: small;
+  text-align: left;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+option
+{
+  padding-left: 0.4em;
+}
+
+fieldset, img
+{
+  border:0;
+}
+
+select, input, textarea
+{
+  font-size: 99%;
+}
+
+ul
+{
+  list-style-type: none;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+/**************/
+/*   Header   */
+/**************/
+
+#header
+{
+  height: 150px;
+  position: relative;
+  background: url(../img/header-left.gif) no-repeat top left;
+  margin-bottom: 20px;
+  }
+
+/* NAV */
+
+#main-menu
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 30px;
+  white-space: nowrap;
+  background: url(../img/header-right.gif) no-repeat bottom right;
+}
+
+#main-menu li
+{
+  height: 150px;
+  float: left;
+  font-weight:  800;
+  letter-spacing: .15em;
+}
+
+#main-menu a
+{
+  display: block;
+  padding: 120px 16px 10px 16px;
+  color :#000;
+}
+
+#main-menu a:hover
+{
+  color: white;
+  background: #000099;
+}
+
+
+/**************/
+/*      Main     */
+/**************/
+
+#container
+{
+  height: 100%;
+  min-height: 100%;
+}
+
+#left-column
+{
+  float: left;
+  z-index: 1;
+}
+
+#right-column
+{
+  float: right;
+  margin: 0px 0 6px 20px;
+}
+
+/* main content section */
+#main
+{
+  z-index: 0;
+  margin: 0 20px 0;
+  min-width: 660px;
+}
+
+#main-right
+{
+  margin-left: 160px;
+  padding-bottom: 50px;
+}
+
+#content a
+{
+  color: blue;
+}
+
+.box
+{
+  width: 160px;
+  margin-bottom: 20px;
+  padding: 0px 0px 15px 0px;
+  background: url(../img/box-bottom.gif) no-repeat bottom left;
+}
+
+.box-content
+{
+  margin: 10px 20px 5px;
+}
+
+.box h4
+{
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+  letter-spacing: .1em;
+  z-index: 0;
+  color: #DFE8F9;
+  width: 160px;
+  background: url(../img/box-top.gif) no-repeat top left;
+}
+
+.box p
+{
+  text-align: center;
+  padding: 10px 20px 0px;
+}
+
+.box form
+{
+  text-align: center;
+}
+
+.box a
+{
+  display: block;
+  color: #000;
+}
+
+.box a:hover
+{
+  color: white;
+  background-color: #000099;
+}
+
+
+/**************/
+/*    Login   */
+/**************/
+
+#login
+{
+  padding: 0.7em 0.7em 0.7em 0.7em;
+  text-align: center;
+  font-size: 85%;
+}
+
+.input
+{
+  width: 80%;
+  background-color: white;
+  font-size: 0.85em;
+}
+
+.button
+{
+  width: 60%;
+  margin-bottom: 0.1em;
+}
+
+#user
+{
+  text-align: center;
+  font-size: 100%;
+}
+
+#user strong
+{
+  line-height: 2.5em;
+}
+
+/**************/
+/*   Menu     */
+/**************/
+
+ul.menu
+{
+  padding-bottom: 10px;
+}
+
+li.menu-item
+{
+  font-weight:  800;
+  padding-top: 14px;
+  padding-bottom: 0px;
+}
+
+ul.submenu
+{
+  font-size: 90%;
+  padding-left: 10px;
+}
+
+li.submenu-item
+{
+  font-weight:  500;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+
+
+#footer1
+{
+  margin: 3em 0 0 0;
+  padding: 1em 0 1em 0;
+  border-top: 1px dotted #507888;
+  bottom: 0;
+  font-size: 75%;
+  position: relative;
+  width: 60%;
+}
+
+/**************/
+/*  Special   */
+/**************/
+
+table.games td, table.evaluation td
+{
+  padding: 10px;
+  background-color: #DFE8F9;
+  text-align: center;
+}
+
+table.games th
+{
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+table.games a, table.games a:visited
+{
+  color: black;
+}
+
+ol#rules
+{
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+p
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input.guess
+{
+  width: 1em;
+  text-align: center;
+}
+
+label
+{
+  display: block;
+  float: left;
+  width: 50px;
+}
+
+input#comment
+{
+  margin-left: 50px
+}
+
+p.comment
+{
+  margin-top: 20px;
+}
+
+div.comment
+{
+  width: 500px;
+  background-color: #DFE8F9;
+  border: 1px solid black;
+  margin-left: 20px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+body.print
+{
+  margin-top: 50px;
+  margin-left: 220px;
+}
+
+body.print h2
+{
+  margin-top: 10px;
+}
+
+body.print h4
+{
+  margin-bottom: 7px;
+}
+
+table.print
+{
+  margin-left: 10px;
+}
+
+table.print tr td
+{
+  width: 7em;
+}
+
+ol#home
+{
+  margin-left: 2.5em;
+}
+
+ol#home li
+{
+  margin-top: 0.5em;
+}
+
+textarea#id_text
+{
+  font:1.5em/150% Courier;
+}

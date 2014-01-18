@@ -1,0 +1,63 @@
+{% load static %}
+{% load staticfiles %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>WM Tippspiel</title>
+  <meta name="keywords" content="Privates WM Tippspiel" />
+  <meta name="description" content="Privates WM Tippspiel" />
+  <!--<style type="text/css" media="all">-->
+    <!--@import "tipgame/css/style.css";-->
+    <!--@import {% static "tipgame/css/style.css" %};-->
+  <!--</style>-->
+  <link rel="stylesheet" type="text/css" href={% static "tipgame/css/style.css" %} />
+</head>
+
+<body>
+  <div id="header">
+    {% include 'tipgame/menus/main_menu.html' %}
+  </div> <!-- END header -->
+
+  <div id="container">
+
+    <div id="left-column">
+      <div class="box">
+        <h4>{% block sub_menu_header %}{% endblock sub_menu_header %}</h4>
+        <div class="box-content">
+        {% block sub_menu %}
+        {% endblock sub_menu %}
+        </div>
+      </div>
+    </div>
+
+    <div id="right-column">
+      {% block login %}
+          {% include 'tipgame/user.html' %}
+      {% endblock login %}
+      <!--{% block news %}-->
+          <!--{% include 'tipgame/news.html' %}-->
+      <!--{% endblock news %}-->
+      {% block news2 %}
+          {% include 'tipgame/public_viewing.html' %}
+      {% endblock news2 %}
+    </div>
+
+    <div id="main">
+      <div id="main-right">
+        <div id="content">
+      {% block content %}
+      {% endblock content %}
+        </div>
+        <div id="footer1">
+          Copyright ©2014 Ute u. Rainer Mansfeld<br />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

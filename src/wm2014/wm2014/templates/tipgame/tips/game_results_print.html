@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Druckversion {{ game.country1 }} - {{ game.country2 }}</title>
+  <meta name="keywords" content="Privates EM Tippspiel" />
+  <meta name="description" content="Privates EM Tippspiel" />
+  <style type="text/css" media="all">
+    @import "/site_media/style/style.css";
+  </style>
+</head>
+
+<body class="print">
+    <h1>EM-Tippspiel</h1>
+    <h2>Ergebnis für das Spiel</h2>
+    <h2>{{ game.country1 }} - {{ game.country2 }}
+        ({{ game.result1 }}:{{ game.result2 }})
+
+        <p><h4>Richtiges Ergebnis ({{ points.result }} Punkte)</h4></p>
+        <table class="print">
+          {% if tips_kats.result %}
+            {% for tip in tips_kats.result %}
+              <tr>
+                <td>{{ tip.0 }}</td>
+              </tr>
+            {% endfor %}
+          {% else %}
+            <tr><td>-/-</td></tr>
+          {% endif %}
+        </table>
+        <br />
+
+        <p><h4>Richtige Tordifferenz ({{ points.goal_difference }} Punkte)</h4></p>
+        <table class="print">
+          {% if tips_kats.goal_difference %}
+            {% for tip in tips_kats.goal_difference %}
+              <tr>
+                <td>{{ tip.0 }}</td>
+                <td>{{ tip.1 }}:{{ tip.2 }}</td>
+              </tr>
+            {% endfor %}
+          {% else %}
+            <tr><td>-/-</td></tr>
+          {% endif %}
+         </table>
+        <br />
+
+        {% if game_is_not_tie %}
+          <p><h4>Richtige Tendenz ({{ points.tendency }} Punkt{{ points.tendency|pluralize:"e"  }})</h4></p>
+          <table class="print">
+            {% if tips_kats.tendency %}
+              {% for tip in tips_kats.tendency %}
+                <tr>
+                  <td>{{ tip.0 }}</td>
+                  <td>{{ tip.1 }}:{{ tip.2 }}</td>
+                </tr>
+              {% endfor %}
+            {% else %}
+              <tr><td>-/-</td></tr>
+            {% endif %}
+          </table>
+          <br />
+        {% endif %}
+
+        <p><h4>Keine Punkte</h4></p>
+        <table class="print">
+          {% if tips_kats.none %}
+            {% for tip in tips_kats.none %}
+              <tr>
+                <td>{{ tip.0 }}</td>
+                <td>{{ tip.1 }}:{{ tip.2 }}</td>
+              </tr>
+            {% endfor %}
+          {% else %}
+            <tr><td>-/-</td></tr>
+          {% endif %}
+        </table>
+
+        {% if tips_kats.no_tip %}
+        <br />
+        <p><h4>Kein Tipp</h4></p>
+
+         <table class="print">
+         {% for name in tips_kats.no_tip %}
+           <tr>
+             <td>{{ name }}</td>
+           </tr>
+         {% endfor %}
+         </table>
+        {% endif %}
+</body>
+</html>

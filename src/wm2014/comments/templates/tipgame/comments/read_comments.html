@@ -1,0 +1,14 @@
+﻿{% extends 'tipgame/comments/base_comments.html' %}
+
+{% block content %}
+  <h2>Kommentare</h2>
+  {% for comment in comments %}
+    <p class="comment">
+      <h4><strong>{{ comment.user.first_name }}</strong> schrieb am
+          {{ comment.date_time|date:"d.m.Y \u\m H:i \U\h\r" }}:</h4>
+      <div class="comment">
+        {{ comment.text|linebreaksbr }}
+      </div>
+    </p>
+  {% endfor %}
+{% endblock content %}

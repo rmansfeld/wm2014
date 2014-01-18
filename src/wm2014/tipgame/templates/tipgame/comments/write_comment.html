@@ -1,0 +1,10 @@
+﻿{% extends 'tipgame/comments/base_comments.html' %}
+
+{% block content %}
+  <h2>Kommentar schreiben</h2>
+  <form action="" method="POST">
+   {% csrf_token %}
+   {{ form.as_p }}
+    <input id="comment" type="submit" value="Absenden" />
+   </form>
+{% endblock content %}

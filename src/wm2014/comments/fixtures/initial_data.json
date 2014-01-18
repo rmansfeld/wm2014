@@ -1,0 +1,2805 @@
+[
+{
+    "pk": 1, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "logentry", 
+        "name": "log entry", 
+        "app_label": "admin"
+    }
+},
+{
+    "pk": 2, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "permission", 
+        "name": "permission", 
+        "app_label": "auth"
+    }
+},
+{
+    "pk": 3, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "group", 
+        "name": "group", 
+        "app_label": "auth"
+    }
+},
+{
+    "pk": 4, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "user", 
+        "name": "user", 
+        "app_label": "auth"
+    }
+},
+{
+    "pk": 5, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "contenttype", 
+        "name": "content type", 
+        "app_label": "contenttypes"
+    }
+},
+{
+    "pk": 6, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "session", 
+        "name": "session", 
+        "app_label": "sessions"
+    }
+},
+{
+    "pk": 7, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "country", 
+        "name": "Land", 
+        "app_label": "tipgame"
+    }
+},
+{
+    "pk": 8, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "city", 
+        "name": "Spielort", 
+        "app_label": "tipgame"
+    }
+},
+{
+    "pk": 9, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "round", 
+        "name": "round", 
+        "app_label": "tipgame"
+    }
+},
+{
+    "pk": 10, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "game", 
+        "name": "Spiel", 
+        "app_label": "tipgame"
+    }
+},
+{
+    "pk": 11, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "tip", 
+        "name": "Tipp", 
+        "app_label": "tipgame"
+    }
+},
+{
+    "pk": 12, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "player", 
+        "name": "Mitspieler", 
+        "app_label": "tipgame"
+    }
+},
+{
+    "pk": 13, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "comment", 
+        "name": "Kommentar", 
+        "app_label": "tipgame"
+    }
+},
+{
+    "pk": 14, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "message", 
+        "name": "message", 
+        "app_label": "tipgame"
+    }
+},
+{
+    "pk": "996r6k3vwz9hgwk0rxjnohxu3vbopj3k", 
+    "model": "sessions.session", 
+    "fields": {
+        "expire_date": "2014-01-05T11:45:04.125Z", 
+        "session_data": "MzJiYmJhZTJjMTYyMTEzMGZjZjJkYjk3YmIwZTY2NGU0NmYzNmViODp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
+    }
+},
+{
+    "pk": 1, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "A", 
+        "name": "Brasilien"
+    }
+},
+{
+    "pk": 2, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "A", 
+        "name": "Kroatien"
+    }
+},
+{
+    "pk": 3, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "A", 
+        "name": "Mexiko"
+    }
+},
+{
+    "pk": 4, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "A", 
+        "name": "Kamerun"
+    }
+},
+{
+    "pk": 5, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "B", 
+        "name": "Spanien"
+    }
+},
+{
+    "pk": 6, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "B", 
+        "name": "Niederlande"
+    }
+},
+{
+    "pk": 7, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "B", 
+        "name": "Chile"
+    }
+},
+{
+    "pk": 8, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "B", 
+        "name": "Australien"
+    }
+},
+{
+    "pk": 9, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "C", 
+        "name": "Kolumbien"
+    }
+},
+{
+    "pk": 10, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "C", 
+        "name": "Griechenland"
+    }
+},
+{
+    "pk": 11, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "C", 
+        "name": "Elfenbeink\u00fcste"
+    }
+},
+{
+    "pk": 12, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "C", 
+        "name": "Japan"
+    }
+},
+{
+    "pk": 13, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "D", 
+        "name": "Uruguay"
+    }
+},
+{
+    "pk": 14, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "D", 
+        "name": "Costa Rica"
+    }
+},
+{
+    "pk": 15, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "D", 
+        "name": "England"
+    }
+},
+{
+    "pk": 16, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "D", 
+        "name": "Italien"
+    }
+},
+{
+    "pk": 17, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "E", 
+        "name": "Schweiz"
+    }
+},
+{
+    "pk": 18, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "E", 
+        "name": "Ecuador"
+    }
+},
+{
+    "pk": 19, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "E", 
+        "name": "Frankreich"
+    }
+},
+{
+    "pk": 20, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "E", 
+        "name": "Honduras"
+    }
+},
+{
+    "pk": 21, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "F", 
+        "name": "Argentinien"
+    }
+},
+{
+    "pk": 22, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "F", 
+        "name": "Bosnien-Herzegowina"
+    }
+},
+{
+    "pk": 23, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "F", 
+        "name": "Iran"
+    }
+},
+{
+    "pk": 24, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "F", 
+        "name": "Nigeria"
+    }
+},
+{
+    "pk": 25, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "G", 
+        "name": "Deutschland"
+    }
+},
+{
+    "pk": 26, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "G", 
+        "name": "Portugal"
+    }
+},
+{
+    "pk": 27, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "G", 
+        "name": "Ghana"
+    }
+},
+{
+    "pk": 28, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "G", 
+        "name": "USA"
+    }
+},
+{
+    "pk": 29, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "H", 
+        "name": "Belgien"
+    }
+},
+{
+    "pk": 30, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "H", 
+        "name": "Algerien"
+    }
+},
+{
+    "pk": 31, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "H", 
+        "name": "Russland"
+    }
+},
+{
+    "pk": 32, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "H", 
+        "name": "Korea"
+    }
+},
+{
+    "pk": 33, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Erster Gruppe A"
+    }
+},
+{
+    "pk": 34, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Erster Gruppe B"
+    }
+},
+{
+    "pk": 35, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Erster Gruppe C"
+    }
+},
+{
+    "pk": 36, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Erster Gruppe D"
+    }
+},
+{
+    "pk": 37, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Erster Gruppe E"
+    }
+},
+{
+    "pk": 38, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Erster Gruppe F"
+    }
+},
+{
+    "pk": 39, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Erster Gruppe G"
+    }
+},
+{
+    "pk": 40, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Erster Gruppe H"
+    }
+},
+{
+    "pk": 41, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Zweiter Gruppe A"
+    }
+},
+{
+    "pk": 42, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Zweiter Gruppe B"
+    }
+},
+{
+    "pk": 43, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Zweiter Gruppe C"
+    }
+},
+{
+    "pk": 44, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Zweiter Gruppe D"
+    }
+},
+{
+    "pk": 45, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Zweiter Gruppe E"
+    }
+},
+{
+    "pk": 46, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Zweiter Gruppe F"
+    }
+},
+{
+    "pk": 47, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Zweiter Gruppe G"
+    }
+},
+{
+    "pk": 48, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Zweiter Gruppe H"
+    }
+},
+{
+    "pk": 49, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 49"
+    }
+},
+{
+    "pk": 50, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 50"
+    }
+},
+{
+    "pk": 51, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 51"
+    }
+},
+{
+    "pk": 52, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 52"
+    }
+},
+{
+    "pk": 53, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 53"
+    }
+},
+{
+    "pk": 54, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 54"
+    }
+},
+{
+    "pk": 55, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 55"
+    }
+},
+{
+    "pk": 56, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 56"
+    }
+},
+{
+    "pk": 57, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 57"
+    }
+},
+{
+    "pk": 58, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 58"
+    }
+},
+{
+    "pk": 59, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 59"
+    }
+},
+{
+    "pk": 60, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 60"
+    }
+},
+{
+    "pk": 61, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Verlierer Spiel 61"
+    }
+},
+{
+    "pk": 62, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Verlierer Spiel 62"
+    }
+},
+{
+    "pk": 63, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 61"
+    }
+},
+{
+    "pk": 64, 
+    "model": "tipgame.country", 
+    "fields": {
+        "group": "N", 
+        "name": "Sieger Spiel 62"
+    }
+},
+{
+    "pk": 1, 
+    "model": "tipgame.city", 
+    "fields": {
+        "name": "Rio de Janeiro", 
+        "stadium": "Maracana-Stadion"
+    }
+},
+{
+    "pk": 2, 
+    "model": "tipgame.city", 
+    "fields": {
+        "name": "Sao Paulo", 
+        "stadium": "Arena de Sao Paulo"
+    }
+},
+{
+    "pk": 3, 
+    "model": "tipgame.city", 
+    "fields": {
+        "name": "Belo Horizonte", 
+        "stadium": "Est\u00e1dio Mineirao"
+    }
+},
+{
+    "pk": 4, 
+    "model": "tipgame.city", 
+    "fields": {
+        "name": "Brasilia", 
+        "stadium": "Est\u00e1dio Nacional"
+    }
+},
+{
+    "pk": 5, 
+    "model": "tipgame.city", 
+    "fields": {
+        "name": "Cuiaba", 
+        "stadium": "Arena Pantanal"
+    }
+},
+{
+    "pk": 6, 
+    "model": "tipgame.city", 
+    "fields": {
+        "name": "Curitiba", 
+        "stadium": "Arena da Baixada"
+    }
+},
+{
+    "pk": 7, 
+    "model": "tipgame.city", 
+    "fields": {
+        "name": "Fortaleza", 
+        "stadium": "Est\u00e1dio Castelao"
+    }
+},
+{
+    "pk": 8, 
+    "model": "tipgame.city", 
+    "fields": {
+        "name": "Manaus", 
+        "stadium": "Arena da Amaz\u00f4nia"
+    }
+},
+{
+    "pk": 9, 
+    "model": "tipgame.city", 
+    "fields": {
+        "name": "Natal", 
+        "stadium": "Arena das Dunas"
+    }
+},
+{
+    "pk": 10, 
+    "model": "tipgame.city", 
+    "fields": {
+        "name": "Porto Alegre", 
+        "stadium": "Est\u00e1dio Beira-Rio"
+    }
+},
+{
+    "pk": 11, 
+    "model": "tipgame.city", 
+    "fields": {
+        "name": "Recife", 
+        "stadium": "Arena Pernambuco"
+    }
+},
+{
+    "pk": 12, 
+    "model": "tipgame.city", 
+    "fields": {
+        "name": "Salvador da Bahia", 
+        "stadium": "Arena Fonte Nova"
+    }
+},
+{
+    "pk": 1, 
+    "model": "tipgame.round", 
+    "fields": {
+        "points_for_correct_goal_difference": 2, 
+        "points_for_correct_tendency": 1, 
+        "name": "Vorrunde", 
+        "short_name": "VR", 
+        "points_for_correct_result": 3
+    }
+},
+{
+    "pk": 2, 
+    "model": "tipgame.round", 
+    "fields": {
+        "points_for_correct_goal_difference": 4, 
+        "points_for_correct_tendency": 2, 
+        "name": "Achtelfinale", 
+        "short_name": "AF", 
+        "points_for_correct_result": 6
+    }
+},
+{
+    "pk": 3, 
+    "model": "tipgame.round", 
+    "fields": {
+        "points_for_correct_goal_difference": 6, 
+        "points_for_correct_tendency": 3, 
+        "name": "Viertelfinale", 
+        "short_name": "VF", 
+        "points_for_correct_result": 9
+    }
+},
+{
+    "pk": 4, 
+    "model": "tipgame.round", 
+    "fields": {
+        "points_for_correct_goal_difference": 8, 
+        "points_for_correct_tendency": 4, 
+        "name": "Halbfinale", 
+        "short_name": "HF", 
+        "points_for_correct_result": 12
+    }
+},
+{
+    "pk": 5, 
+    "model": "tipgame.round", 
+    "fields": {
+        "points_for_correct_goal_difference": 10, 
+        "points_for_correct_tendency": 5, 
+        "name": "Spiel um Platz 3", 
+        "short_name": "S3", 
+        "points_for_correct_result": 15
+    }
+},
+{
+    "pk": 6, 
+    "model": "tipgame.round", 
+    "fields": {
+        "points_for_correct_goal_difference": 12, 
+        "points_for_correct_tendency": 6, 
+        "name": "Finale", 
+        "short_name": "F", 
+        "points_for_correct_result": 18
+    }
+},
+{
+    "pk": 1, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-12T20:00:00Z", 
+        "city": 2, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 2, 
+        "country1": 1, 
+        "round": 1
+    }
+},
+{
+    "pk": 2, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-13T16:00:00Z", 
+        "city": 9, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 4, 
+        "country1": 3, 
+        "round": 1
+    }
+},
+{
+    "pk": 3, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-13T19:00:00Z", 
+        "city": 12, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 6, 
+        "country1": 5, 
+        "round": 1
+    }
+},
+{
+    "pk": 4, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-13T22:00:00Z", 
+        "city": 5, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 8, 
+        "country1": 7, 
+        "round": 1
+    }
+},
+{
+    "pk": 5, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-14T16:00:00Z", 
+        "city": 3, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 10, 
+        "country1": 9, 
+        "round": 1
+    }
+},
+{
+    "pk": 6, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-15T01:00:00Z", 
+        "city": 11, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 12, 
+        "country1": 11, 
+        "round": 1
+    }
+},
+{
+    "pk": 7, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-14T19:00:00Z", 
+        "city": 7, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 14, 
+        "country1": 13, 
+        "round": 1
+    }
+},
+{
+    "pk": 8, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-14T22:00:00Z", 
+        "city": 8, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 16, 
+        "country1": 15, 
+        "round": 1
+    }
+},
+{
+    "pk": 9, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-15T16:00:00Z", 
+        "city": 4, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 18, 
+        "country1": 17, 
+        "round": 1
+    }
+},
+{
+    "pk": 10, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-15T19:00:00Z", 
+        "city": 10, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 20, 
+        "country1": 19, 
+        "round": 1
+    }
+},
+{
+    "pk": 11, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-15T22:00:00Z", 
+        "city": 1, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 22, 
+        "country1": 21, 
+        "round": 1
+    }
+},
+{
+    "pk": 12, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-16T19:00:00Z", 
+        "city": 6, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 24, 
+        "country1": 23, 
+        "round": 1
+    }
+},
+{
+    "pk": 13, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-16T16:00:00Z", 
+        "city": 12, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 26, 
+        "country1": 25, 
+        "round": 1
+    }
+},
+{
+    "pk": 14, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-16T22:00:00Z", 
+        "city": 9, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 28, 
+        "country1": 27, 
+        "round": 1
+    }
+},
+{
+    "pk": 15, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-17T16:00:00Z", 
+        "city": 3, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 30, 
+        "country1": 29, 
+        "round": 1
+    }
+},
+{
+    "pk": 16, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-17T22:00:00Z", 
+        "city": 6, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 32, 
+        "country1": 31, 
+        "round": 1
+    }
+},
+{
+    "pk": 17, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-17T19:00:00Z", 
+        "city": 7, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 3, 
+        "country1": 1, 
+        "round": 1
+    }
+},
+{
+    "pk": 18, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-18T22:00:00Z", 
+        "city": 8, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 2, 
+        "country1": 4, 
+        "round": 1
+    }
+},
+{
+    "pk": 19, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-18T19:00:00Z", 
+        "city": 1, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 7, 
+        "country1": 5, 
+        "round": 1
+    }
+},
+{
+    "pk": 20, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-18T16:00:00Z", 
+        "city": 10, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 6, 
+        "country1": 8, 
+        "round": 1
+    }
+},
+{
+    "pk": 21, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-19T16:00:00Z", 
+        "city": 4, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 11, 
+        "country1": 9, 
+        "round": 1
+    }
+},
+{
+    "pk": 22, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-19T22:00:00Z", 
+        "city": 9, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 10, 
+        "country1": 12, 
+        "round": 1
+    }
+},
+{
+    "pk": 23, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-19T19:00:00Z", 
+        "city": 2, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 15, 
+        "country1": 13, 
+        "round": 1
+    }
+},
+{
+    "pk": 24, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-20T16:00:00Z", 
+        "city": 11, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 14, 
+        "country1": 16, 
+        "round": 1
+    }
+},
+{
+    "pk": 25, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-20T19:00:00Z", 
+        "city": 12, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 19, 
+        "country1": 17, 
+        "round": 1
+    }
+},
+{
+    "pk": 26, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-20T22:00:00Z", 
+        "city": 6, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 18, 
+        "country1": 20, 
+        "round": 1
+    }
+},
+{
+    "pk": 27, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-21T16:00:00Z", 
+        "city": 3, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 23, 
+        "country1": 21, 
+        "round": 1
+    }
+},
+{
+    "pk": 28, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-21T22:00:00Z", 
+        "city": 5, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 22, 
+        "country1": 24, 
+        "round": 1
+    }
+},
+{
+    "pk": 29, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-21T19:00:00Z", 
+        "city": 7, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 27, 
+        "country1": 25, 
+        "round": 1
+    }
+},
+{
+    "pk": 30, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-22T22:00:00Z", 
+        "city": 8, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 26, 
+        "country1": 28, 
+        "round": 1
+    }
+},
+{
+    "pk": 31, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-22T16:00:00Z", 
+        "city": 1, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 31, 
+        "country1": 29, 
+        "round": 1
+    }
+},
+{
+    "pk": 32, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-22T19:00:00Z", 
+        "city": 10, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 30, 
+        "country1": 32, 
+        "round": 1
+    }
+},
+{
+    "pk": 33, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-23T20:00:00Z", 
+        "city": 4, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 1, 
+        "country1": 4, 
+        "round": 1
+    }
+},
+{
+    "pk": 34, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-23T20:00:00Z", 
+        "city": 11, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 3, 
+        "country1": 2, 
+        "round": 1
+    }
+},
+{
+    "pk": 35, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-23T16:00:00Z", 
+        "city": 6, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 5, 
+        "country1": 8, 
+        "round": 1
+    }
+},
+{
+    "pk": 36, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-23T16:00:00Z", 
+        "city": 2, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 7, 
+        "country1": 6, 
+        "round": 1
+    }
+},
+{
+    "pk": 37, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-24T20:00:00Z", 
+        "city": 5, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 9, 
+        "country1": 12, 
+        "round": 1
+    }
+},
+{
+    "pk": 38, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-24T20:00:00Z", 
+        "city": 7, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 11, 
+        "country1": 10, 
+        "round": 1
+    }
+},
+{
+    "pk": 39, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-24T16:00:00Z", 
+        "city": 9, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 13, 
+        "country1": 16, 
+        "round": 1
+    }
+},
+{
+    "pk": 40, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-24T16:00:00Z", 
+        "city": 3, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 15, 
+        "country1": 14, 
+        "round": 1
+    }
+},
+{
+    "pk": 41, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-25T20:00:00Z", 
+        "city": 8, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 17, 
+        "country1": 20, 
+        "round": 1
+    }
+},
+{
+    "pk": 42, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-25T20:00:00Z", 
+        "city": 1, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 19, 
+        "country1": 18, 
+        "round": 1
+    }
+},
+{
+    "pk": 43, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-25T16:00:00Z", 
+        "city": 10, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 21, 
+        "country1": 24, 
+        "round": 1
+    }
+},
+{
+    "pk": 44, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-25T16:00:00Z", 
+        "city": 12, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 23, 
+        "country1": 22, 
+        "round": 1
+    }
+},
+{
+    "pk": 45, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-26T16:00:00Z", 
+        "city": 11, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 25, 
+        "country1": 28, 
+        "round": 1
+    }
+},
+{
+    "pk": 46, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-26T16:00:00Z", 
+        "city": 4, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 27, 
+        "country1": 26, 
+        "round": 1
+    }
+},
+{
+    "pk": 47, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-26T20:00:00Z", 
+        "city": 2, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 29, 
+        "country1": 32, 
+        "round": 1
+    }
+},
+{
+    "pk": 48, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-26T20:00:00Z", 
+        "city": 6, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 31, 
+        "country1": 30, 
+        "round": 1
+    }
+},
+{
+    "pk": 49, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-28T16:00:00Z", 
+        "city": 3, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 42, 
+        "country1": 33, 
+        "round": 2
+    }
+},
+{
+    "pk": 50, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-28T20:00:00Z", 
+        "city": 1, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 44, 
+        "country1": 35, 
+        "round": 2
+    }
+},
+{
+    "pk": 51, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-29T16:00:00Z", 
+        "city": 7, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 41, 
+        "country1": 34, 
+        "round": 2
+    }
+},
+{
+    "pk": 52, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-29T20:00:00Z", 
+        "city": 11, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 43, 
+        "country1": 36, 
+        "round": 2
+    }
+},
+{
+    "pk": 53, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-30T16:00:00Z", 
+        "city": 4, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 46, 
+        "country1": 37, 
+        "round": 2
+    }
+},
+{
+    "pk": 54, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-06-30T20:00:00Z", 
+        "city": 10, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 48, 
+        "country1": 39, 
+        "round": 2
+    }
+},
+{
+    "pk": 55, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-07-01T16:00:00Z", 
+        "city": 2, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 45, 
+        "country1": 38, 
+        "round": 2
+    }
+},
+{
+    "pk": 56, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-07-01T20:00:00Z", 
+        "city": 12, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 47, 
+        "country1": 40, 
+        "round": 2
+    }
+},
+{
+    "pk": 57, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-07-04T20:00:00Z", 
+        "city": 7, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 50, 
+        "country1": 49, 
+        "round": 3
+    }
+},
+{
+    "pk": 58, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-07-04T16:00:00Z", 
+        "city": 1, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 54, 
+        "country1": 53, 
+        "round": 3
+    }
+},
+{
+    "pk": 59, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-07-05T20:00:00Z", 
+        "city": 12, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 52, 
+        "country1": 51, 
+        "round": 3
+    }
+},
+{
+    "pk": 60, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-07-05T16:00:00Z", 
+        "city": 4, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 56, 
+        "country1": 55, 
+        "round": 3
+    }
+},
+{
+    "pk": 61, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-07-08T20:00:00Z", 
+        "city": 3, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 58, 
+        "country1": 57, 
+        "round": 4
+    }
+},
+{
+    "pk": 62, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-07-09T20:00:00Z", 
+        "city": 2, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 60, 
+        "country1": 59, 
+        "round": 4
+    }
+},
+{
+    "pk": 63, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-07-12T20:00:00Z", 
+        "city": 4, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 62, 
+        "country1": 61, 
+        "round": 5
+    }
+},
+{
+    "pk": 64, 
+    "model": "tipgame.game", 
+    "fields": {
+        "date_time": "2014-07-13T20:00:00Z", 
+        "city": 1, 
+        "result2": null, 
+        "result1": null, 
+        "country2": 64, 
+        "country1": 63, 
+        "round": 6
+    }
+},
+{
+    "pk": 1, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_logentry", 
+        "name": "Can add log entry", 
+        "content_type": [
+            "admin", 
+            "logentry"
+        ]
+    }
+},
+{
+    "pk": 2, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_logentry", 
+        "name": "Can change log entry", 
+        "content_type": [
+            "admin", 
+            "logentry"
+        ]
+    }
+},
+{
+    "pk": 3, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_logentry", 
+        "name": "Can delete log entry", 
+        "content_type": [
+            "admin", 
+            "logentry"
+        ]
+    }
+},
+{
+    "pk": 4, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_permission", 
+        "name": "Can add permission", 
+        "content_type": [
+            "auth", 
+            "permission"
+        ]
+    }
+},
+{
+    "pk": 5, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_permission", 
+        "name": "Can change permission", 
+        "content_type": [
+            "auth", 
+            "permission"
+        ]
+    }
+},
+{
+    "pk": 6, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_permission", 
+        "name": "Can delete permission", 
+        "content_type": [
+            "auth", 
+            "permission"
+        ]
+    }
+},
+{
+    "pk": 7, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_group", 
+        "name": "Can add group", 
+        "content_type": [
+            "auth", 
+            "group"
+        ]
+    }
+},
+{
+    "pk": 8, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_group", 
+        "name": "Can change group", 
+        "content_type": [
+            "auth", 
+            "group"
+        ]
+    }
+},
+{
+    "pk": 9, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_group", 
+        "name": "Can delete group", 
+        "content_type": [
+            "auth", 
+            "group"
+        ]
+    }
+},
+{
+    "pk": 10, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_user", 
+        "name": "Can add user", 
+        "content_type": [
+            "auth", 
+            "user"
+        ]
+    }
+},
+{
+    "pk": 11, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_user", 
+        "name": "Can change user", 
+        "content_type": [
+            "auth", 
+            "user"
+        ]
+    }
+},
+{
+    "pk": 12, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_user", 
+        "name": "Can delete user", 
+        "content_type": [
+            "auth", 
+            "user"
+        ]
+    }
+},
+{
+    "pk": 13, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_contenttype", 
+        "name": "Can add content type", 
+        "content_type": [
+            "contenttypes", 
+            "contenttype"
+        ]
+    }
+},
+{
+    "pk": 14, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_contenttype", 
+        "name": "Can change content type", 
+        "content_type": [
+            "contenttypes", 
+            "contenttype"
+        ]
+    }
+},
+{
+    "pk": 15, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_contenttype", 
+        "name": "Can delete content type", 
+        "content_type": [
+            "contenttypes", 
+            "contenttype"
+        ]
+    }
+},
+{
+    "pk": 16, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_session", 
+        "name": "Can add session", 
+        "content_type": [
+            "sessions", 
+            "session"
+        ]
+    }
+},
+{
+    "pk": 17, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_session", 
+        "name": "Can change session", 
+        "content_type": [
+            "sessions", 
+            "session"
+        ]
+    }
+},
+{
+    "pk": 18, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_session", 
+        "name": "Can delete session", 
+        "content_type": [
+            "sessions", 
+            "session"
+        ]
+    }
+},
+{
+    "pk": 19, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_country", 
+        "name": "Can add Land", 
+        "content_type": [
+            "tipgame", 
+            "country"
+        ]
+    }
+},
+{
+    "pk": 20, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_country", 
+        "name": "Can change Land", 
+        "content_type": [
+            "tipgame", 
+            "country"
+        ]
+    }
+},
+{
+    "pk": 21, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_country", 
+        "name": "Can delete Land", 
+        "content_type": [
+            "tipgame", 
+            "country"
+        ]
+    }
+},
+{
+    "pk": 22, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_city", 
+        "name": "Can add Spielort", 
+        "content_type": [
+            "tipgame", 
+            "city"
+        ]
+    }
+},
+{
+    "pk": 23, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_city", 
+        "name": "Can change Spielort", 
+        "content_type": [
+            "tipgame", 
+            "city"
+        ]
+    }
+},
+{
+    "pk": 24, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_city", 
+        "name": "Can delete Spielort", 
+        "content_type": [
+            "tipgame", 
+            "city"
+        ]
+    }
+},
+{
+    "pk": 25, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_round", 
+        "name": "Can add round", 
+        "content_type": [
+            "tipgame", 
+            "round"
+        ]
+    }
+},
+{
+    "pk": 26, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_round", 
+        "name": "Can change round", 
+        "content_type": [
+            "tipgame", 
+            "round"
+        ]
+    }
+},
+{
+    "pk": 27, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_round", 
+        "name": "Can delete round", 
+        "content_type": [
+            "tipgame", 
+            "round"
+        ]
+    }
+},
+{
+    "pk": 28, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_game", 
+        "name": "Can add Spiel", 
+        "content_type": [
+            "tipgame", 
+            "game"
+        ]
+    }
+},
+{
+    "pk": 29, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_game", 
+        "name": "Can change Spiel", 
+        "content_type": [
+            "tipgame", 
+            "game"
+        ]
+    }
+},
+{
+    "pk": 30, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_game", 
+        "name": "Can delete Spiel", 
+        "content_type": [
+            "tipgame", 
+            "game"
+        ]
+    }
+},
+{
+    "pk": 31, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_tip", 
+        "name": "Can add Tipp", 
+        "content_type": [
+            "tipgame", 
+            "tip"
+        ]
+    }
+},
+{
+    "pk": 32, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_tip", 
+        "name": "Can change Tipp", 
+        "content_type": [
+            "tipgame", 
+            "tip"
+        ]
+    }
+},
+{
+    "pk": 33, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_tip", 
+        "name": "Can delete Tipp", 
+        "content_type": [
+            "tipgame", 
+            "tip"
+        ]
+    }
+},
+{
+    "pk": 34, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_player", 
+        "name": "Can add Mitspieler", 
+        "content_type": [
+            "tipgame", 
+            "player"
+        ]
+    }
+},
+{
+    "pk": 35, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_player", 
+        "name": "Can change Mitspieler", 
+        "content_type": [
+            "tipgame", 
+            "player"
+        ]
+    }
+},
+{
+    "pk": 36, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_player", 
+        "name": "Can delete Mitspieler", 
+        "content_type": [
+            "tipgame", 
+            "player"
+        ]
+    }
+},
+{
+    "pk": 37, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_comment", 
+        "name": "Can add Kommentar", 
+        "content_type": [
+            "tipgame", 
+            "comment"
+        ]
+    }
+},
+{
+    "pk": 38, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_comment", 
+        "name": "Can change Kommentar", 
+        "content_type": [
+            "tipgame", 
+            "comment"
+        ]
+    }
+},
+{
+    "pk": 39, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_comment", 
+        "name": "Can delete Kommentar", 
+        "content_type": [
+            "tipgame", 
+            "comment"
+        ]
+    }
+},
+{
+    "pk": 40, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_message", 
+        "name": "Can add message", 
+        "content_type": [
+            "tipgame", 
+            "message"
+        ]
+    }
+},
+{
+    "pk": 41, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_message", 
+        "name": "Can change message", 
+        "content_type": [
+            "tipgame", 
+            "message"
+        ]
+    }
+},
+{
+    "pk": 42, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_message", 
+        "name": "Can delete message", 
+        "content_type": [
+            "tipgame", 
+            "message"
+        ]
+    }
+},
+{
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "rainer", 
+        "first_name": "Rainer", 
+        "last_name": "Mansfeld", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2013-12-22T11:45:04Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$wVODtH50UFQB$vdYjbeur704G3KDRvqZePigv8Qfy1YYSBahFBvyHwlw=", 
+        "email": "rainer.mansfeld@gmail.com", 
+        "date_joined": "2013-12-22T11:00:43Z"
+    }
+},
+{
+    "pk": 2, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Bernd", 
+        "first_name": "Bernd", 
+        "last_name": "Kalauch", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$SehIljFVI1R7$PIkH7uaSxwqJ9QKnUrg5Fglpq8eTBl2rLIHV5nWFIxQ=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 3, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Conny", 
+        "first_name": "Conny", 
+        "last_name": "Mansfeld", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$eFyy9xo6Dvz1$Iuzc1d2xR7JLvuhQHPlUfqwJGZoTggQXtGDSSDxG9EU=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 4, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Dani", 
+        "first_name": "Dani", 
+        "last_name": "Kalauch", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$73ceE0NhA3nu$SN4Zop8YCgNt6m9A1lJbR4Vkg/qbbGj3MXrCXR3Ib6U=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 5, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Edith", 
+        "first_name": "Edith", 
+        "last_name": "Mansfeld", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$tNZyBQbEK1KB$3k1iYFaNjRQkagKXPvRcjtcNlh/RTJs/5T8soKk3uIU=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 6, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Elfi", 
+        "first_name": "Elfi", 
+        "last_name": "Mansfeld-Deneke", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$7JergvbfabZD$q9PH7kX5+07BfiaYzv+kzFS2HenUwDOxUaeGFLIc4j0=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 7, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Ella", 
+        "first_name": "Ella", 
+        "last_name": "Mansfeld", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$EZn4waLYFyan$vn0GRQH/232ghTLwW84ZGw5CD0gPCa3uhokJrj+8qoU=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 8, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Gudrun", 
+        "first_name": "Gudrun", 
+        "last_name": "Buck", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$tbZLViUGmUMF$SQ3yJ8dJb2ulUHTb0ljPlGk5YpvAnKUzfrUD8YIRvfk=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 9, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Hans-Georg", 
+        "first_name": "Hans-Georg", 
+        "last_name": "Deneke", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$WLj9dMFONEc0$G4vxGytK0n9IbQ5idPcwKhTKFD1oKa5lUjoPmvx/Ia4=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 10, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Heidi", 
+        "first_name": "Heidi", 
+        "last_name": "Mansfeld", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$UajbE7LwDxO2$rF4kBj7/b7T+n4VLdUGNi8xd9cwP/ngVQUjG0pH9pnk=", 
+        "email": "heidi@romulo.de", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 11, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Heinz", 
+        "first_name": "Heinz", 
+        "last_name": "Mansfeld", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$3PlJm5ZohbLL$ulAJX5Nku778gsmGcKHfj/qwyyFfKFeXxhK8TR1JH/I=", 
+        "email": "mansfeld.heinz@gmail.com", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 12, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Henri", 
+        "first_name": "Henri", 
+        "last_name": "Buck", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$VnjMIZir2TpP$cjwgqvqjbQF9kf+Za/7mDYOFkk6gcIVdHFLXYRfk2ME=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 13, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Linus", 
+        "first_name": "Linus", 
+        "last_name": "Buck", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$kGgpanCb3MXJ$LoaY6Jraje3S7ovopA68t7SHP9Q4H6KwWSabVtV4f1s=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 14, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Ralf", 
+        "first_name": "Ralf", 
+        "last_name": "Meier", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$83X7jOEjKqqd$y7/o2ZMGy0vu8OH7t5uW8MxwYoJTH1SnSTfkY1LNC1w=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 15, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Toni", 
+        "first_name": "Toni", 
+        "last_name": "Mansfeld", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$ce1Mxn4pZ1JU$wdOMglTdIkOvibqm8+UhfrWHHvh91vxWVFmNgJQSu54=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 16, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Ute", 
+        "first_name": "Ute", 
+        "last_name": "Mansfeld", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [
+            [
+                "change_comment", 
+                "tipgame", 
+                "comment"
+            ], 
+            [
+                "delete_comment", 
+                "tipgame", 
+                "comment"
+            ], 
+            [
+                "add_player", 
+                "tipgame", 
+                "player"
+            ], 
+            [
+                "change_player", 
+                "tipgame", 
+                "player"
+            ], 
+            [
+                "delete_player", 
+                "tipgame", 
+                "player"
+            ], 
+            [
+                "change_tip", 
+                "tipgame", 
+                "tip"
+            ], 
+            [
+                "delete_tip", 
+                "tipgame", 
+                "tip"
+            ]
+        ], 
+        "password": "pbkdf2_sha256$12000$sk5eZ9GHa7m5$Rk02PfBEL3YTWFhfGfBIXM3MlagTSx1Ls1tDLSoNtjI=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 17, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Volker", 
+        "first_name": "Volker", 
+        "last_name": "Mansfeld", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$CIT6Jt9CyrVU$PLRu+IFxDoDB+c6D2g/blngsyOxV9/JnsLXNIcjjmCw=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 18, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Cornelia", 
+        "first_name": "Cornelia", 
+        "last_name": "Malchow", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$Xx3CpVcbBxOT$8KD3kfxnhtJNha3f5LXJ+TlEhCoeE73+5ETgDRDqwIw=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 19, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "Paula", 
+        "first_name": "Paula", 
+        "last_name": "Buck", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-12-31T22:00:00Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$RuW5zoId06wW$uUQanVeb1vorgq7AyYB4FlcOlcu+py+ZZLajZ6K7mxU=", 
+        "email": "", 
+        "date_joined": "2013-12-31T22:00:00Z"
+    }
+},
+{
+    "pk": 1, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "M", 
+        "age_group": "N", 
+        "user": [
+            "rainer"
+        ]
+    }
+},
+{
+    "pk": 2, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "M", 
+        "age_group": "N", 
+        "user": [
+            "Bernd"
+        ]
+    }
+},
+{
+    "pk": 3, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "F", 
+        "age_group": "N", 
+        "user": [
+            "Conny"
+        ]
+    }
+},
+{
+    "pk": 4, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "F", 
+        "age_group": "N", 
+        "user": [
+            "Dani"
+        ]
+    }
+},
+{
+    "pk": 5, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "F", 
+        "age_group": "N", 
+        "user": [
+            "Edith"
+        ]
+    }
+},
+{
+    "pk": 6, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "F", 
+        "age_group": "N", 
+        "user": [
+            "Elfi"
+        ]
+    }
+},
+{
+    "pk": 7, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "F", 
+        "age_group": "J", 
+        "user": [
+            "Ella"
+        ]
+    }
+},
+{
+    "pk": 8, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "F", 
+        "age_group": "N", 
+        "user": [
+            "Gudrun"
+        ]
+    }
+},
+{
+    "pk": 9, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "M", 
+        "age_group": "N", 
+        "user": [
+            "Hans-Georg"
+        ]
+    }
+},
+{
+    "pk": 10, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "F", 
+        "age_group": "N", 
+        "user": [
+            "Heidi"
+        ]
+    }
+},
+{
+    "pk": 11, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "M", 
+        "age_group": "N", 
+        "user": [
+            "Heinz"
+        ]
+    }
+},
+{
+    "pk": 12, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "M", 
+        "age_group": "J", 
+        "user": [
+            "Henri"
+        ]
+    }
+},
+{
+    "pk": 13, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "M", 
+        "age_group": "N", 
+        "user": [
+            "Linus"
+        ]
+    }
+},
+{
+    "pk": 14, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "M", 
+        "age_group": "N", 
+        "user": [
+            "Ralf"
+        ]
+    }
+},
+{
+    "pk": 15, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "M", 
+        "age_group": "J", 
+        "user": [
+            "Toni"
+        ]
+    }
+},
+{
+    "pk": 16, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "F", 
+        "age_group": "N", 
+        "user": [
+            "Ute"
+        ]
+    }
+},
+{
+    "pk": 17, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "M", 
+        "age_group": "N", 
+        "user": [
+            "Volker"
+        ]
+    }
+},
+{
+    "pk": 18, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "F", 
+        "age_group": "N", 
+        "user": [
+            "Cornelia"
+        ]
+    }
+},
+{
+    "pk": 19, 
+    "model": "tipgame.player", 
+    "fields": {
+        "gender": "F", 
+        "age_group": "J", 
+        "user": [
+            "Paula"
+        ]
+    }
+},
+{
+    "pk": 1, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 2, 
+        "action_time": "2013-12-22T14:40:19.312Z", 
+        "object_repr": "rainer", 
+        "object_id": "1", 
+        "change_message": "first_name und last_name ge\u00e4ndert.", 
+        "user": [
+            "rainer"
+        ], 
+        "content_type": [
+            "auth", 
+            "user"
+        ]
+    }
+},
+{
+    "pk": 2, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 3, 
+        "action_time": "2013-12-22T14:41:42.484Z", 
+        "object_repr": "Kommentar von Rainer am 22.12.13 um 14:26:07 Uhr", 
+        "object_id": "2", 
+        "change_message": "", 
+        "user": [
+            "rainer"
+        ], 
+        "content_type": [
+            "tipgame", 
+            "comment"
+        ]
+    }
+},
+{
+    "pk": 3, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 3, 
+        "action_time": "2013-12-22T14:41:50.812Z", 
+        "object_repr": "Kommentar von Rainer am 22.12.13 um 14:23:50 Uhr", 
+        "object_id": "1", 
+        "change_message": "", 
+        "user": [
+            "rainer"
+        ], 
+        "content_type": [
+            "tipgame", 
+            "comment"
+        ]
+    }
+},
+{
+    "pk": 4, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 2, 
+        "action_time": "2013-12-22T14:43:40.984Z", 
+        "object_repr": "Ute", 
+        "object_id": "16", 
+        "change_message": "user_permissions ge\u00e4ndert.", 
+        "user": [
+            "rainer"
+        ], 
+        "content_type": [
+            "auth", 
+            "user"
+        ]
+    }
+}
+]

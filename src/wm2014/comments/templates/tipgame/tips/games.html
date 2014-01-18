@@ -1,0 +1,104 @@
+﻿{% extends 'tipgame/tips/base_tips.html' %}
+
+{% block content %}
+  <h2>{{ round }}</h2>
+    {% if tips_forms %}
+      <p><strong>Achtung!</strong><br />
+         Vor dem Verlassen der Seite unbedingt Speichern anklicken, sonst gehen
+         alle Änderungen verloren.</p>
+    {% endif %}
+  {% if group %}
+    <h3>Gruppe {{ group}}</h3><br />
+  {% endif %}  
+  <form method="post" action="">
+    {% csrf_token %}
+    <table class="games">
+      <tr>
+        <th>Datum/Zeit</th>
+        <th>Ort</th>
+        <th>Spiel</th>
+        <th>Tipp</th>
+        <th>Erg.</th>
+        <th>Pkte.</th>
+      </tr>
+
+    {% for tip in finished_tips %}
+        <tr>
+            <td>{{ tip.game.date_time|date:"d. E, H:i \U\h\r" }}</td>
+            <td>{{ tip.game.city.name }}</td>
+            <td>{{ tip.game.country1 }} - {{ tip.game.country2 }}</td>
+            <td>
+              <a href="/Spiel/{{ tip.game.id }}"
+                 title="Hier klicken um die Tipps der anderen zu sehen.">
+               {{ tip.guess1|default_if_none:"-" }} :
+               {{ tip.guess2|default_if_none:"-" }}
+              </a>
+            </td>
+            {% if tip.game.has_result %}
+                <td>{{ tip.game.result1 }} : {{ tip.game.result2 }}</td>
+                <td><strong>{{ tip.points }}</strong></td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+    {% for tip, form in tips_forms %}
+        <tr>
+            <td>{{ tip.game.date_time|date:"d. E, H:i \U\h\r" }}</td>
+            <td>{{ tip.game.city.name }}</td>
+            <td>{{ tip.game.country1 }} - {{ tip.game.country2 }}</td>
+            <td>
+                {{ form.guess1 }} :
+                {{ form.guess2 }}
+            </td>
+            {% if form.guess1.errors %}
+              <td class="myerrors">
+                {{ form.guess1.errors }}
+              </td>
+            {% else %}
+              {% if form.guess2.errors %}
+                <td class="myerrors">
+                  {{ form.guess2.errors }}
+                </td>
+              {% endif %}
+            {% endif %}
+        </tr>
+    {% endfor %}
+    </table>
+    {% if tips_forms %}
+      <p>
+        <input type="submit" value="Speichern" />
+      </p>
+    {% endif %}
+  </form>
+  {% if chart %}
+    <br />
+    <h3>Tabelle</h3>
+    <table class="games">
+      <tr>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th>P</th>
+        <th>D</th>
+        <th>V</th>
+        <th>Sp</th>
+        <th>S</th>
+        <th>N</th>
+        <th>U</th>
+      </tr>
+    {% for country, points, diff, shot, got, total, wins, losses, ties in chart %}
+        <tr>
+          <td>{{ forloop.counter }}</td>
+          <td>{{ country }}</td>
+          <td>{{ points }}</td>
+          <td>{{ diff }}</td>
+          <td>{{ shot }}:{{ got }}</td>
+          <td>{{ total }}</td>
+          <td>{{ wins }}</td>
+          <td>{{ losses }}</td>
+          <td>{{ ties }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <p>P = Punkte, D = Tor-Differenz, V = Tor-Verhältnis, Sp = Spiele,
+       S = Siege, N = Niederlagen, U = Unentschieden</p>
+  {% endif %}
+{% endblock content %}
